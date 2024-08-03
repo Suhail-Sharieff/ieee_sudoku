@@ -1,0 +1,81 @@
+<!-- made by SUHAIL  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+<!-- Just for fun -->
+<div class="stars star1"></div>
+    <div class="stars star2"></div>
+    <div class="stars star3"></div>
+    <div class="stars star4"></div>
+    <div class="stars star5"></div>
+    <div class="stars star6"></div>
+    <div class="stars star7"></div>
+    <div class="stars star8"></div>
+    -------------------------------------------------------------------------------------------------------------Suhail Sharieff---------------------------------------------------------------------------------------------------
+    <br>
+    -------------------------------------------------------------------------------------------------------------CSE B-------------------------------------------------------------------------------------------------------------
+    <br>
+    -------------------------------------------------------------------------------------------------------------2nd SEM-----------------------------------------------------------------------------------------------------------
+
+
+    <div class="stars star9"></div>
+    <div class="stars star10"></div>
+    <div class="stars star11"></div>
+    <div class="stars star12"></div>
+    <div class="stars star13"></div>
+    <div class="stars star14"></div>
+    <div class="stars star15"></div>
+    <!--glittering stars for fun-->
+    <div class="container">
+        <div id="sudoku-grid">
+            <!-- Sudoku grid cells will be dynamically generated here -->
+        </div>
+        <div class="buttons">
+            <button id="solve-btn">Solve</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+         //for fun star glittering multiple color
+  const stars = document.querySelectorAll('.stars');
+
+  stars.forEach(function(star) {
+    // gen a random color
+    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    // app the random color to the star
+    star.style.backgroundColor = randomColor;
+  });
+
+
+ //  footer element
+    var footer = document.createElement("footer");
+
+    
+
+    
+    //  image to anchor
+
+    //  anchor to footer
+    footer.appendChild(anchor);
+
+    //  footer to document body
+    document.body.appendChild(footer);
+
+
+});
+
+    </script>
+    
+</body>
+<footer>
+    
+</footer>
+</html>

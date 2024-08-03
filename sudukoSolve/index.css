@@ -1,0 +1,164 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 4vw); 
+    grid-template-rows: repeat(9, 4vw); 
+    gap: 1px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    border: 1px solid white;
+    width: 4vw; 
+    height: 4vw; 
+    text-align: center;
+    line-height: 4vw; 
+    font-size: 3vw;
+    background-color: #000;
+    color: yellow; 
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 4vw; /* Adjust size based on viewport width */
+    background-color: rgb(184, 205, 52); /* Set button background color to white */
+    color: black; /* Set button text color to black */
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    
+}
+
+
+/* Just add for fun */
+
+.stars {
+width: 5px;
+height: 5px;
+border-radius: 50%;
+background-color: Aqua;
+animation-name: twinkle;
+animation-iteration-count: infinite;
+position: absolute;
+}
+
+.star1 {
+margin-top: 10%;
+margin-left: 10%;
+animation-duration: 2s;
+}
+.star2 {
+margin-top: 20%;
+margin-left: 15%;
+animation-duration: 1s;
+}
+.star3 {
+margin-top: 25%;
+margin-left: 30%;
+animation-duration: 3s;
+}
+.star4 {
+margin-top: 5%;
+margin-left: 40%;
+animation-duration: 1.5s;
+}
+.star5 {
+margin-top: 15%;
+margin-left: 60%;
+animation-duration: 1s;
+}
+.star6 {
+margin-top: 18%;
+margin-left: 65%;
+animation-duration: 2.5s;
+}
+.star7 {
+margin-top: 13%;
+margin-left: 70%;
+animation-duration: 1.5s;
+}
+.star8 {
+margin-top: 1%;
+margin-left: 80%;
+animation-duration: 3.5s;
+}
+.star9 {
+margin-top: 7%;
+margin-left: 90%;
+animation-duration: 4s;
+}
+.star10 {
+margin-top: 8%;
+margin-left: 95%;
+animation-duration: 3.5s;
+}
+
+.star11 {
+margin-top: 30%;
+margin-left: 13%;
+animation-duration: 3.5s;
+}
+
+.star12 {
+margin-top: 20%;
+margin-left: 59%;
+animation-duration: 3.5s;
+}
+
+.star13 {
+margin-top: 9%;
+margin-left: 55%;
+animation-duration: 3.5s;
+}
+
+.star14 {
+margin-top: 29%;
+margin-left: 55%;
+animation-duration: 3.5s;
+}
+
+.star15 {
+margin-top: 28%;
+margin-left: 48%;
+animation-duration: 3.5s;
+}
+
+
+
+@keyframes twinkle {
+20% {
+transform: scale(0.5);
+opacity: 0.5;
+}
+}
+
+
+
+#logo { 
+position: absolute;
+right: 0px;
+bottom: 0px;
+width: 80px;
+height: 80px;
+margin-bottom: 10px;
+}
